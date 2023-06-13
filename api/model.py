@@ -25,9 +25,10 @@ app.config['CORS_HEADERS'] = 'Content_Type'
 
 @app.route('https://audf-ai-puce.vercel.app/feedback', methods=['POST'])
 def process_feedback():
-     feedback_text = request.args.get('param1')
+    
     # feedback_text = request.json['feedback']
     # feedback_text = "The wedding hall was good but the overall event was exciting."
+    feedback_text = request.args.get('param1')
 
     processed_text = preprocess_text(feedback_text)  # Perform any necessary preprocessing on the input text
     model = tf.keras.models.load_model('./feedback_model')
