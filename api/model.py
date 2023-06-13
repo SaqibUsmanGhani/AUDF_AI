@@ -23,7 +23,7 @@ app.config['CORS_HEADERS'] = 'Content_Type'
 # # print(response.json())
 
 
-@app.route('https://audf-ai-puce.vercel.app/feedback', methods=['POST'])
+@app.route('/feedback', methods=['POST'])
 def process_feedback():
     
     # feedback_text = request.json['feedback']
