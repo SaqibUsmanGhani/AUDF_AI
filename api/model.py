@@ -72,7 +72,7 @@ def make_prediction(text, model):
 #         "Date":x,
 #         "programming":"python"
 #         }
-@app.route("/")
+@app.route("/hello")
 def hello_world():
     return "Hello World!"
 
