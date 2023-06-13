@@ -2,10 +2,10 @@
     "version": 2,
     
     "builds": [
-       { "src": "AISERVER/AI_Server.py", "use": "@vercel/python" }
+       { "src": "model.py", "use": "@vercel/python" }
     ],
     "routes": [
-       { "src": "/(.*)", "dest": "AISERVER/AI_Server.py" }
+       { "src": "/(.*)", "dest": "model.py" }
     ]
 
  }
